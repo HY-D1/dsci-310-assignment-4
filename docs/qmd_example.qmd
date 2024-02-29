@@ -2,14 +2,13 @@
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 format: 
-    html:
+    html: 
         toc: true
-        toc-expand: 2
         toc-depth: 2
+        embed-resources: true 
         output-file: "index"
     pdf:
         toc: true
-        toc-expand: 2
         toc-depth: 2
 bibliography: references.bib
 editor: source
@@ -41,7 +40,7 @@ knitr (@knitr), tidyverse (@tidyverse), and Quarto (@Allaire_Quarto_2022).
 
 ## Results
 
-![](../docs/images/horse_pops_plot.png){#fig-horse_pop width=80%}
+![](../docs/horse_pops_plot.png){#fig-horse_pop width=80%}
 
 @fig-horse_pop: Horse populations for all provinces in Canada from 1906 - 1972.
 
@@ -78,7 +77,7 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as @fig-horse_pop.
 
-![](../docs/images/horse_pop_plot_largest_sd.png){#fig-horse_pop_largest_sd width=60%}
+![](../docs/horse_pop_plot_largest_sd.png){#fig-horse_pop_largest_sd width=60%}
 
 @fig-horse_pop_largest_sd: Horse populations for the province with the largest standard deviation
 
