@@ -3,6 +3,8 @@
 
 all: docs/horse_pop_plot_largest_sd.png \
 	docs/horse_pops_plot.png \
+	docs/images/horse_pop_plot_largest_sd.png \
+	docs/images/horse_pops_plot.png \
 	docs/horses_spread.csv \
 	docs/index.html \
 	docs/qmd_example.pdf
@@ -13,6 +15,10 @@ all: docs/horse_pop_plot_largest_sd.png \
 docs/horse_pop_plot_largest_sd.png docs/horse_pops_plot.png docs/horses_spread.csv: source/generate_figures.R
 	Rscript source/generate_figures.R --input_dir="data/00030067-eng.csv" \
 		--out_dir="docs"
+
+docs/images/horse_pop_plot_largest_sd.png docs/images/horse_pops_plot.png docs/horses_spread.csv: source/generate_figures.R
+	Rscript source/generate_figures.R --input_dir="data/00030067-eng.csv" \
+		--out_dir="docs/images"
 
 # render quarto report in HTML and PDF
 docs/index.html: docs docs/qmd_example.qmd
