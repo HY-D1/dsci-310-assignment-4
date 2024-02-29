@@ -5,11 +5,12 @@ format:
     html:
         toc: true
         toc-expand: 2
-        toc-depth: 5
+        toc-depth: 2
+        output-file: "index"
     pdf:
         toc: true
         toc-expand: 2
-        toc-depth: 5
+        toc-depth: 2
 bibliography: references.bib
 editor: source
 ---
@@ -34,8 +35,7 @@ Horse population data were sourced from the
 
 ## Methods
 
-The R programming language (@R) 
-and the following R packages were used to perform the analysis: 
+The R programming language (@R) and the following R packages were used to perform the analysis: 
 knitr (@knitr), tidyverse (@tidyverse), and Quarto (@Allaire_Quarto_2022). 
 *Note: this report is adapted from (@ttimbers-horses).*
 
